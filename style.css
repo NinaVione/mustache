@@ -1,0 +1,10 @@
+.cartoon {
+  display: flex;
+  align-items: center;
+  color: #464547;
+}
+
+.cartoon-name {
+  margin-right: 6px;
+  text-transform: uppercase;
+}

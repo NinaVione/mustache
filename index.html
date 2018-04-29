@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h2>Mustache task: Cartoons</h2>
+    <div id="output"></div>
+    <script type="text/html" id="cartoons">
+      {{#cartoons}}
+      <div class="cartoon">
+        {{#display}}{{name}}{{/display}}
+        {{#onClick}}{{link}}{{/onClick}}
+      </div>
+      {{/cartoons}}
+    </script>
+  </body>
+</html>
